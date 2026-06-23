@@ -30,9 +30,6 @@ export const buildWorkspaceCommands = ({
       scope: "global",
       run: onToggleTheme,
     },
-    // Candidate task:
-    // - add "Open ticket list" for the ticket page
-    // - add "Mark current ticket as reviewed" for the current ticket
     // Keep this feature logic outside the generic command palette runtime.
   ];
 

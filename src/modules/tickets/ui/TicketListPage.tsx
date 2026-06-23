@@ -37,8 +37,8 @@ export function TicketListPage() {
   const recentTickets = useMemo<Ticket[]>(() => {
     const ticketsById = getTicketByIdMap(tickets);
     return readRecentTicketIds()
-      .map((id) => ticketsById.get(id))            // id -> Ticket | undefined
-      .filter((ticket): ticket is Ticket => Boolean(ticket)); // отсеять устаревшие
+      .map((id) => ticketsById.get(id))
+      .filter((ticket): ticket is Ticket => Boolean(ticket));
   }, [tickets]);
 
   return (
@@ -65,7 +65,7 @@ export function TicketListPage() {
           ))}
         </TextField>
       </Box>
-      
+
       <Paper variant="outlined" sx={{ p: 2, mb: 2 }}>
         <Typography variant="h6">Recently opened</Typography>
         {recentTickets.length === 0 ? (
