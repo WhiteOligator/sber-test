@@ -17,7 +17,7 @@ export const buildWorkspaceCommands = ({
   onOpenTicketList,
   onMarkTicketReviewed,
 }: BuildWorkspaceCommandsParams): CommandDefinition[] => {
-  
+
   const commands: CommandDefinition[] = [
     {
       id: "toggle-theme",

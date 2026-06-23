@@ -51,7 +51,7 @@ export function TicketDetailPage() {
             <Typography variant="h5" component="h1">
               {ticket.id} · {ticket.title}
             </Typography>
-            <Chip label={ticket.status} size="small" />
+            <Chip label={ticket.status} size="small" data-testid="ticket-status" />
             <Chip label={ticket.priority} size="small" variant="outlined" />
           </Box>
           <Typography color="text.secondary">

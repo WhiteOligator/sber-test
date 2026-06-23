@@ -79,6 +79,7 @@ export function TicketListPage() {
                 key={ticket.id}
                 component={Link}
                 to={`/tickets/${ticket.id}`}
+                data-testid="recent-ticket-item"
               >
                 <ListItemText primary={`${ticket.id} · ${ticket.title}`} />
                 <Chip label={ticket.status} size="small" />
@@ -98,6 +99,7 @@ export function TicketListPage() {
               key={ticket.id}
               component={Link}
               to={`/tickets/${ticket.id}`}
+              data-testid="ticket-list-item"
             >
               <ListItemText
                 primary={`${ticket.id} · ${ticket.title}`}

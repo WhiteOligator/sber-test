@@ -158,6 +158,7 @@ export function CommandPalette({ commands, children }: CommandPaletteProps) {
               <ListItemButton
                 key={command.id}
                 id={`command-${command.id}`}
+                data-testid={`command-${command.id}`}
                 role="option"
                 selected={index === activeIndex}
                 disabled={command.disabled}

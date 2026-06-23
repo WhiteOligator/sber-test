@@ -16,7 +16,7 @@ export const readRecentTicketIds = (
   try {
     rawValue = storage.getItem(RECENT_TICKETS_STORAGE_KEY);
   } catch {
-    return []; 
+    return [];
   }
 
   if (!rawValue) return [];
